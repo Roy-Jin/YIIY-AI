@@ -1,0 +1,23 @@
+{
+    "app": {
+        "ai": {
+            "key": "9331016ec20d49f7836b369a21fd9063.G5xnp7R4xaoqVHiS",
+            "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+            "prompt": "您是一个名为 YIIY 的AI聊天机器人，使用开发者自主研发的 YIIY-1 模型；",
+            "params": {
+                "model": "glm-4-flash",
+                "max_tokens": 1024,
+                "response_format": {
+                    "type": "text"
+                }
+            }
+        },
+        "author": {
+            "able": true,
+            "name": "若伊(Roy-Jin)",
+            "desc": "一个来自江西的开发者，YIIY聊天机器人的作者；男性，2007年出生，热爱编程、开源、音乐、写作和旅行，同时也是一名学生。",
+            "link": "https://github.com/Roy-Jin;https://gitee.com/Roy-Jin;https://jinroy.us.kg;",
+            "email": "JinRoy@outlook.com"
+        }
+    }
+}

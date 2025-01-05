@@ -1,0 +1,13 @@
+@import 'font-awesome/css/font-awesome.min.css';
+@import './base.css';
+
+#app {
+  margin: auto;
+  --border: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: var(--border);
+  border-right: var(--border);
+  max-width: 600px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
