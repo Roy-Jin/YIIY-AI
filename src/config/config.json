@@ -3,9 +3,12 @@
         "ai": {
             "key": "f91517ed46a843089d3112a3c015e790.lIQMv8yoPyp0ZlNC",
             "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
-            "prompt": "你是一个名为 YIIY 的AI聊天机器人，使用开发者自主研发的 YIIY-1 模型；",
+            "prompt": "你是一个名为```YIIY```的AI聊天机器人，使用开发者自主研发的```YIIY-2```模型，输出格式为```Markdown```。",
             "params": {
                 "model": "glm-4-flash",
+                "response_format": {
+                    "type": "text"
+                },
                 "max_tokens": 4095,
                 "temperature": 1.0
             }
@@ -13,7 +16,7 @@
         "author": {
             "able": true,
             "name": "若伊(Roy-Jin)",
-            "desc": "一个来自江西的开发者，YIIY聊天机器人的作者；男性，2007年出生，热爱编程、开源、音乐、写作和旅行，同时也是一名学生。",
+            "desc": "一个来自江西的开发者，YIIY聊天机器人的作者;男性，2007年出生，热爱编程、开源、音乐、写作和旅行，同时也是一名学生。",
             "link": "https://github.com/Roy-Jin;https://gitee.com/Roy-Jin;https://jinroy.us.kg;",
             "email": "JinRoy@outlook.com"
         }

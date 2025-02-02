@@ -120,6 +120,9 @@ const handleSendMessage = async () => {
   messageInput.value = '';
   document.getElementById('message-input').style.height = 'auto';
 
+  // 当前消息索引
+  const currentMessageIndex = JSON.parse(JSON.stringify(chatHistory.value[activeChatIndex.value].messages));
+
   // 添加思考中状态
   const thinkingMessageIndex = chatHistory.value[activeChatIndex.value].messages.push({
     role: "assistant",
@@ -129,6 +132,7 @@ const handleSendMessage = async () => {
   await scrollToBottom();
 
   try {
+    // console.log(currentMessageIndex);
     const response = await fetch(config.ai.url, {
       method: 'POST',
       headers: {
@@ -137,13 +141,12 @@ const handleSendMessage = async () => {
       },
       body: JSON.stringify({
         ...config.ai.params,
-        messages: chatHistory.value[activeChatIndex.value].messages
+        messages: currentMessageIndex
       })
     });
 
     const data = await response.json();
     const replyContent = data.choices[0].message.content;
-    // console.log(data, chatHistory.value[activeChatIndex.value].messages); // 调试用
 
     // 处理Markdown内容
     const formattedContent = formatMarkdownContent(replyContent);
@@ -157,7 +160,7 @@ const handleSendMessage = async () => {
   }
 };
 window.addEventListener('keydown', (event) => {
-  if (event.code === 'Enter' && !event.shiftKey) {
+  if (event.code === 'Enter' && event.ctrlKey) {
     event.preventDefault();
     handleSendMessage();
   }
