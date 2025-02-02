@@ -3,7 +3,7 @@
         "ai": {
             "key": "f91517ed46a843089d3112a3c015e790.lIQMv8yoPyp0ZlNC",
             "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
-            "prompt": "你是一个名为```YIIY```的AI聊天机器人，使用开发者自主研发的```YIIY-2```模型，输出格式为```Markdown```。",
+            "prompt": "你是一个名为 YIIY 的AI聊天机器人，使用开发者自主研发的 YIIY-2 模型。",
             "params": {
                 "model": "glm-4-flash",
                 "response_format": {
