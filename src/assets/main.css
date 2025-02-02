@@ -1,6 +1,13 @@
 @import 'font-awesome/css/font-awesome.min.css';
 @import './base.css';
 
+@font-face {
+  font-family: 'Fira Code VF';
+  src: url('./FiraCode-VF.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
+}
+
 #app {
   margin: auto;
   --border: 1px solid rgba(0, 0, 0, 0.12);

@@ -1,15 +1,13 @@
 {
     "app": {
         "ai": {
-            "key": "9331016ec20d49f7836b369a21fd9063.G5xnp7R4xaoqVHiS",
+            "key": "f91517ed46a843089d3112a3c015e790.lIQMv8yoPyp0ZlNC",
             "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
-            "prompt": "您是一个名为 YIIY 的AI聊天机器人，使用开发者自主研发的 YIIY-1 模型；",
+            "prompt": "你是一个名为 YIIY 的AI聊天机器人，使用开发者自主研发的 YIIY-1 模型；",
             "params": {
                 "model": "glm-4-flash",
-                "max_tokens": 1024,
-                "response_format": {
-                    "type": "text"
-                }
+                "max_tokens": 4095,
+                "temperature": 1.0
             }
         },
         "author": {
