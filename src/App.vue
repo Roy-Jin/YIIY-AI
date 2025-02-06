@@ -336,6 +336,20 @@ const isSending = ref(false);
   height: auto;
 }
 
+.chat-message-content table {
+  overflow: scroll;
+  background-color: #00000033;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+.chat-message-content table * {
+  padding: 3px;
+  border-radius: 5px;
+  background-color: #ffffff11;
+}
+
 .chat-footer {
   border-top: var(--border);
 }
