@@ -226,7 +226,7 @@ const messageInput = ref('');
 const isSending = ref(false);
 </script>
 
-<style scoped>
+<style>
 .chat-header {
   display: flex;
   align-items: center;
@@ -323,6 +323,17 @@ const isSending = ref(false);
   margin: 0;
   font-family: Arial, sans-serif;
   letter-spacing: unset;
+}
+
+.chat-message-content a {
+  color: cornsilk;
+  font-family: 'Fira Code VF';
+  text-decoration: underline;
+}
+
+.chat-message-content img {
+  width: 100%;
+  height: auto;
 }
 
 .chat-footer {

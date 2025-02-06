@@ -36,12 +36,6 @@ button {
   border: none;
 }
 
-a {
-  color: cornsilk;
-  font-family: 'Fira Code VF';
-  text-decoration: underline;
-}
-
 input,
 textarea {
   font-family: inherit;
